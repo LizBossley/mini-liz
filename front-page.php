@@ -16,6 +16,14 @@ if( !empty($image) ): ?>
 
 <?php endif; ?>
 
+<?php $bio = get_field('front_page_bio');
+
+if( !empty($bio) ): ?>
+
+	<div class="bio"><?php echo $bio ?></div>
+
+<?php endif; ?>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			
