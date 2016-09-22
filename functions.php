@@ -64,6 +64,12 @@ function mini_liz_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	//register additional thumbnail sizes
+  add_image_size( 'thumb-600', 600, 400, true );  
+  add_image_size( 'thumb-2000', 2000);  
+  add_image_size( 'thumb-1000', 1000);  
+  add_image_size( 'thumb-500', 500); 
 }
 endif;
 add_action( 'after_setup_theme', 'mini_liz_setup' );

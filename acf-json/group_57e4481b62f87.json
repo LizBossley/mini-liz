@@ -1,0 +1,50 @@
+{
+    "key": "group_57e4481b62f87",
+    "title": "Blog Post Field Group",
+    "fields": [
+        {
+            "key": "field_57e4482437bc4",
+            "label": "Blog Post Fallback Color",
+            "name": "blog_post_fallback_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                ".primary-background": "Primary Background",
+                ".secondary-background": "Secondary Background"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1474578607
+}

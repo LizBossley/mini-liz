@@ -28,6 +28,22 @@ if( !empty($bio) ): ?>
 		<main id="main" class="site-main" role="main">
 			
 			<?php
+			$featured_posts = get_posts( array(
+				'numberposts' => 6,
+					)
+				);
+			var_dump($featured_posts);
+
+			if($featured_posts) {
+				foreach($featured_posts as $post) { ?>
+					<h2><a href="<?php the_permalink(); ?>"><?php echo $post->post_title ?></a></h2>
+					<?php if ( has_post_thumbnail() ) : ?>
+				    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">		
+			        <?php the_post_thumbnail('thumb-600'); ?>
+				    </a>
+					<?php endif; ?>
+				<?php }
+			}
 			?>
 
 		</main><!-- #main -->
