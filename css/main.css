@@ -290,3 +290,12 @@ nav.mobile-nav ul li {
 nav.mobile-nav ul li > ul {
   padding-left: .82rem;
 }
+
+.grid-image {
+  position: relative;
+}
+
+.grid-overlay {
+  position: absolute;
+  top: 0px;
+}

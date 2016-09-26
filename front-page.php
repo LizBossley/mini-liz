@@ -32,20 +32,33 @@ if( !empty($bio) ): ?>
 				'numberposts' => 6,
 					)
 				);
-			var_dump($featured_posts);
 
-			if($featured_posts) {
-				foreach($featured_posts as $post) { ?>
-					<h2><a href="<?php the_permalink(); ?>"><?php echo $post->post_title ?></a></h2>
-					<?php if ( has_post_thumbnail() ) : ?>
-				    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">		
-			        <?php the_post_thumbnail('thumb-600'); ?>
-				    </a>
-					<?php endif; ?>
-				<?php }
-			}
+			if($featured_posts) { ?>
+				<div class="home-grid row small-up-1 medium-up-2 large-up-3">
+					<?php foreach($featured_posts as $post) { 
+						
+						$fallbackColor = get_field('blog_post_fallback_color');
+
+
+
+						?>
+						<div class="column <?php echo $fallbackColor ?>">
+							<div class="grid-image">
+							<?php if ( has_post_thumbnail() ) : ?>
+						    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">		
+					        <?php the_post_thumbnail('thumb-600'); ?>
+						    </a>
+							<?php endif; ?>
+								<div class="grid-overlay">
+									<h2><a href="<?php the_permalink(); ?>"><?php echo $post->post_title ?></a></h2>
+								</div>
+							</div>
+						</div>
+					<?php } ?>
+			</div>
+			<?php }
 			?>
-
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
