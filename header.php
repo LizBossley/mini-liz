@@ -21,7 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site" data-sticky-container>
+<div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'allpaving' ); ?></a>
 	
   		<nav class="mobile-nav">
@@ -29,6 +29,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_id' => 'main-menu', 'menu_class' => 'main-nav' ) ); ?>
 		</nav>
 
+<div data-sticky-container>
 	<header id="masthead" class="site-header sticky" role="banner" data-sticky>
 		<div class="row header-row">
 			<div class="mobile-top">
@@ -67,4 +68,4 @@
 			</div>
 		</div>
 	</header><!-- #masthead -->
-
+</div>
