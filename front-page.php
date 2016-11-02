@@ -34,15 +34,12 @@ if( !empty($bio) ): ?>
 				);
 
 			if($featured_posts) { ?>
-				<div class="home-grid row small-up-1 medium-up-2 large-up-3">
+				<div class="home-grid row small-up-1 medium-up-2 large-up-3" data-equalizer >
 					<?php foreach($featured_posts as $post) { 
 						
 						$fallbackColor = get_field('blog_post_fallback_color');
-
-
-
 						?>
-						<div class="column <?php echo $fallbackColor ?>">
+						<div class="column <?php echo $fallbackColor ?>" data-equalizer-watch>
 							<div class="grid-image">
 							<?php if ( has_post_thumbnail() ) : ?>
 						    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">		
