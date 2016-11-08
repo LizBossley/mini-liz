@@ -256,13 +256,36 @@ nav.mobile-nav ul li > ul {
 }
 
 /*--------------------------HOME GRID--------------------------*/
+.home-grid-wrapper {
+  background-color: #432E41;
+}
+
 .home-grid .grid-image {
   position: relative;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  -webkit-box-shadow: 3px 3px 15px -4px #0f0e0f;
+  -moz-box-shadow: 3px 3px 15px -4px #0f0e0f;
+  box-shadow: 3px 3px 15px -4px #0f0e0f;
+}
+
+.home-grid .grid-image:hover {
+  -webkit-box-shadow: 5px 5px 15px -4px #0f0e0f;
+  -moz-box-shadow: 5px 5px 15px -4px #0f0e0f;
+  box-shadow: 5px 5px 15px -4px #0f0e0f;
+}
+
+.home-grid .grid-image .thumbnail {
+  margin-bottom: 0;
 }
 
 .home-grid .grid-overlay {
   position: absolute;
   top: 0px;
+  padding: 0px 10px;
 }
 
 .home-grid .column {

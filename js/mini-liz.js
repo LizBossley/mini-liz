@@ -1,6 +1,4 @@
-jQuery( document ).ready(function() {
-  jQuery(document).foundation();
-});
+jQuery(document).foundation();
 
 showLeft.onclick = function() {
     jQuery('.mobile-nav').addClass('menu-open');

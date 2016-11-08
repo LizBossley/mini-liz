@@ -34,16 +34,16 @@ if( !empty($bio) ): ?>
 				);
 
 			if($featured_posts) { ?>
-				<div class="home-grid row small-up-1 medium-up-2 large-up-3" data-equalizer >
-					<?php foreach($featured_posts as $post) { 
-						
-						$fallbackColor = get_field('blog_post_fallback_color');
+				<div class="home-grid-wrapper">
+					<div class="home-grid row small-up-1 medium-up-2 large-up-3" data-equalizer >
+						<?php foreach($featured_posts as $post) { 
+							$fallbackColor = get_field('blog_post_fallback_color');
 						?>
 						<div class="column" data-equalizer-watch>
-							<div class="grid-image <?php echo $fallbackColor ?>">
+							<div class="grid-image">
 							<?php if ( has_post_thumbnail() ) : ?>
 						    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">		
-					        <?php the_post_thumbnail('thumb-600'); ?>
+					        <?php the_post_thumbnail('thumb-600', ['class' => 'thumbnail']); ?>
 						    </a>
 							<?php endif; ?>
 								<div class="grid-overlay">
@@ -51,7 +51,8 @@ if( !empty($bio) ): ?>
 								</div>
 							</div>
 						</div>
-					<?php } ?>
+						<?php } ?>
+					</div>
 			</div>
 			<?php }
 			?>
