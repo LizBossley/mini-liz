@@ -1,0 +1,203 @@
+/*Blog Styles*/
+ul.blog-archive {
+  padding-top: 15px;
+  list-style: none;
+  >li {
+    padding: 5px 20px;
+
+    a{
+      color: $secondary;
+
+      &:hover {
+        color: $gray-dark;
+      }
+    }
+  }
+  .title {
+    background-color: $secondary;
+    text-transform: uppercase;
+    color: $primary;
+    
+    padding: 10px 20px;
+
+    h5 {
+     margin-bottom: 0; 
+    }
+}
+}
+.blog-info {
+  padding: 10px 0;
+  color: $gray-dark;
+}
+article.blog {
+  margin-top: 20px;
+}
+
+.blog-more {
+  float: right;
+
+ a {
+  color: $gray-dark;
+  }
+  &:hover {
+    color: $gray-medium;
+  }
+}
+.date div {
+  text-align: center;
+  color: $white;
+  vertical-align: middle;
+}
+
+.date {
+  background-color: $primary;
+}
+
+.month {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.year {
+  display: block;
+  font-size: 19px;
+}
+.month-year {
+  padding: 13px 2px;
+  line-height: 1.2;
+ }
+
+.date .day {
+  background-color: $primary-dark;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 4px;  
+}
+.entry-header h1.entry-title {
+  line-height: 1.2;
+}
+
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  h1.entry-title {
+    text-align: center;
+  }
+
+  .entry-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .date {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .date {
+    width: 85%
+  }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+
+ // .date .month-year {
+ //    font-size: 12px;
+ //  }
+
+ //  .date div {
+ //    font-size: 19px;
+ //    width: 30%;
+ //  }
+}
+.post-navigation {
+  margin-top: 20px;
+}
+
+.nav-links {
+  margin-top: 15px;
+
+  div {
+    font-size: 16px;
+    display: block;
+
+    a {
+      color: $white;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-next {
+  .button {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  div {
+    background-color: $primary-dark;
+    
+    &:hover {
+      background-color: darken($primary-dark, 3%);
+
+      .nav-next-icon {
+        // background-color: darken($primary-dark, 3%);
+      }
+    }
+
+    i {
+      padding-left: 10px;
+    }
+  }
+}
+
+div.nav-next-icon, div.nav-previous-icon {
+  height: 100%;
+  display: flex;
+  align-items: center; 
+  background-color: inherit;
+}
+
+div.nav-next-icon {
+  float: right;
+ 
+}
+
+div.nav-previous-icon {
+  float: left;
+}
+
+.nav-previous {
+  .button {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+  div {
+    i {
+      padding-right: 10px;
+    }
+  }
+}
+span.edit-link {
+  text-align: center;
+  display: block;
+
+  a {
+    padding: 10px 60px;
+    border: 1px solid $primary;
+  }
+}

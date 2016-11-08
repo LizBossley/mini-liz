@@ -39,11 +39,11 @@ function mini_liz_posted_on() {
 }
 endif;
 
-if ( ! function_exists( 'mini_liz_entry_footer' ) ) :
+if ( ! function_exists( 'mini_liz__entry_categories' ) ) :
 /**
- * Prints HTML with meta information for the categories, tags and comments.
+ * Prints HTML with meta information for the categories and tags.
  */
-function mini_liz_entry_footer() {
+function mini_liz_entry_categories() {
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
@@ -58,6 +58,15 @@ function mini_liz_entry_footer() {
 			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'mini-liz' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
+}
+endif;
+
+if ( ! function_exists( 'mini_liz__entry_footer' ) ) :
+/**
+ * Prints HTML with meta information for the comments.
+ */
+function mini_liz_entry_footer() {
+	
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';

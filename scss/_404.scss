@@ -1,0 +1,48 @@
+/*404 Page*/
+.not-found {
+  .search-submit {
+    font-size: 1rem;
+    width: 25%;
+    padding: 0.6em 2em;
+    box-shadow: none;
+    margin-left: 15px;
+    border-color: $secondary;
+    color: $secondary;
+    
+    background-color: $white;
+
+    &:hover {
+    box-shadow: none;
+    border-color: $primary;
+    color: $primary;
+    }
+  }
+
+  .search-field {
+    width: 70%;
+    float: left;
+  }
+  .search-form {
+    margin-bottom: 30px;
+  }
+  .page-title-404 {
+    text-align: center;
+  }
+  .not-found-intro {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .not-found {
+  .search-submit {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .search-field {
+    width: 100%;
+  }
+}
+}

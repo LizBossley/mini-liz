@@ -39,8 +39,8 @@ if( !empty($bio) ): ?>
 						
 						$fallbackColor = get_field('blog_post_fallback_color');
 						?>
-						<div class="column <?php echo $fallbackColor ?>" data-equalizer-watch>
-							<div class="grid-image">
+						<div class="column" data-equalizer-watch>
+							<div class="grid-image <?php echo $fallbackColor ?>">
 							<?php if ( has_post_thumbnail() ) : ?>
 						    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">		
 					        <?php the_post_thumbnail('thumb-600'); ?>
