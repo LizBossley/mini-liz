@@ -110,10 +110,6 @@ add_action( 'widgets_init', 'mini_liz_widgets_init' );
 function mini_liz_scripts() {
 	wp_enqueue_style( 'mini-liz-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'mini-liz-app', get_template_directory_uri() . '/css/app.css' );
-
-	wp_enqueue_style( 'mini-liz-main', get_template_directory_uri() . '/css/main.css' );
-
 	wp_enqueue_script( 'mini-liz-foundation', get_template_directory_uri() . '/js/foundation.min.js', array('jquery'), '20151215', true );
 
 	wp_enqueue_script( 'mini-liz-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

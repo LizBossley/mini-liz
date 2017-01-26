@@ -1,0 +1,24 @@
+$c-lightBlue: #cfe2e0;
+$c-blue: #195a84;
+$c-purple: #542966;
+$c-offWhite: #e8f1f0;
+$c-orange: #f47221;
+$c-green: #39c19d;
+$c-gray: #8f9d9e;
+$c-darkGray: #555958;
+
+$global-width: 1110px;
+
+$grid-column-gutter: (
+  small: 30px,
+  medium: 30px,
+);
+
+$foundation-palette: (
+  primary: $c-blue,
+  secondary: #777,
+  success: #3adb76,
+  warning: $c-orange,
+  alert: #ec5840,
+);
+

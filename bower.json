@@ -1,0 +1,22 @@
+{
+  "name": "miniliz_theme",
+  "version": "1.5",
+  "authors": [
+    "Liz Bossley <liz.bossley@gmail.com>"
+  ],
+  "description": "miniliz Theme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "WordPress"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+  }
+}
