@@ -68,3 +68,5 @@ HealthPivots Theme is based on Underscores http://underscores.me/, (C) 2012-2014
         @include foundation-float-classes;
         // @include foundation-flex-classes;
 
+@import 'global',
+        'navigation';

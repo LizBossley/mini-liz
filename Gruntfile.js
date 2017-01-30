@@ -21,8 +21,6 @@ module.exports = function(grunt) {
       // 2. Configuration for concatenating files goes here.
       dist: {
         src: [
-          'bower_components/featherlight/release/featherlight.min.js',
-          'bower_components/bxslider-4/dist/jquery.bxslider.js',
           'bower_components/foundation-sites/js/foundation-components.js',
           'js/vendors/*.js', // All JS in the libs folder
           'js/lib/*.js', // All JS in the libs folder
@@ -61,8 +59,6 @@ module.exports = function(grunt) {
         // add you css files here!!!
         // Then remember to include the copied file in style.scss
         src: [
-          'bower_components/featherlight/release/featherlight.min.css',
-          'bower_components/bxslider-4/dist/jquery.bxslider.min.css'
         ],
         dest: 'sass/',
         rename: function(dest, src) {

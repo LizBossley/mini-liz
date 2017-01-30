@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'allpaving' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mini-liz' ); ?></a>
 	
   		<nav class="mobile-nav">
 			<button id="hideLeft" class="close">X</button>
@@ -39,12 +39,12 @@
 					</div>
 					<div class="medium-6 show-for-medium-only columns logo-mobile">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-		            <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/allPavingLogo.svg">  
+		            <img class="logo" src="https://placeholdit.imgix.net/~text?&w=150&h=90">  
 		        </a>
 					</div>
 					<div class="small-12 show-for-small-only columns logo-mobile">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-		            <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/allPavingLogo.svg">  
+		            <img class="logo" src="https://placeholdit.imgix.net/~text?&w=150&h=90">  
 		        </a>
 					</div>
 				</div>
@@ -53,12 +53,12 @@
 			<div class="row collapse">
 				<div class="site-branding header-logo small-2 columns">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-		              <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/allPavingLogo.svg">  
+		              <img class="logo" src="https://placeholdit.imgix.net/~text?&w=150&h=90">  
 			        </a>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation small-10 columns" role="navigation">
-					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'allpaving' ); ?></button> -->
+					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mini-liz' ); ?></button> -->
 					<div class="row">
 						<div class="small-12 columns main-nav-flex flexbox-container">
 							<?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'menu_id' => 'main-menu', 'menu_class' => 'main-nav' ) ); ?>
